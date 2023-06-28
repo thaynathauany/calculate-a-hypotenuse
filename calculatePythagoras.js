@@ -37,4 +37,9 @@ function onCalculateButtonClick() {
   <div class="left-point"></div>`;
 }
 
+function validarNumero(input) {
+  input.value = input.value.replace(/\D/g, '');
+}
+
+
 calculateButton.addEventListener('click', onCalculateButtonClick);

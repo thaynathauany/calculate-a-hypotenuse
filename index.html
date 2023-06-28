@@ -17,9 +17,10 @@
   </div>
   <div class="inputs-container">
     <label for="side-1">Primeiro Cateto</label>
-    <input id="side-1" type="text" />
+    <input type="text" inputmode="numeric" pattern="[0-9]*" title="Digite apenas números" id="side-1"
+      oninput="validarNumero(this)" />
     <label for="side-2">Segundo Cateto</label>
-    <input id="side-2" type="text" />
+    <input type="text" pattern="[0-9]*" title="Digite apenas números" id="side-2" oninput="validarNumero(this)" />
     <button id="calculate-hypotenuse">Calcular Hipotenusa</button>
   </div>
   <script src="./calculatePythagoras.js"></script>
